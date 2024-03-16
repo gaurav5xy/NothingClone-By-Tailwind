@@ -296,7 +296,17 @@
             <span>INDIA</span>
         </div>
     </div>
-    <script src="app.js"></script>
+<script>
+        const navbtn = document.getElementById("navbtn");
+        const navbar = document.getElementById("navbar");
+        
+        navbtn.addEventListener('click',()=>{
+            if(navbar.className.includes("hidden")){
+                navbar.classList.remove("hidden")
+            }else{
+                navbar.className += " hidden"
+            }
+        })
+    </script>
 </body>
-
 </html>
